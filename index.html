@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            margin-left: 20px;
+        }
+
+        .FieldHeaders{
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        .textBoxes{
+            height: 23px;
+            margin-right: 20px;
+            border: 1px solid lightgray;
+        }
+
+        .mandates{
+            color: red;
+        }
+
+        .FieldTexts{
+            font-size: 12px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 167.44px;
+        }
+
+        .fieldDescribes{
+            margin-top: 0px;
+        }
+
+        input[name='email']{
+            width: 352.88px;
+        }
+
+        .checked{
+            color:orange;
+        }
+
+        .ratings{
+            margin-bottom: 10px;
+        }
+
+        .tableHeaders{
+            text-align: center;
+        }
+
+        #radioPositioning{
+            margin: 7px 50px;
+        }
+
+        .HeaderCellPositioning{
+            width: 140px;
+            height: 25px;
+            padding-left: 10px;
+            font-size: 14px;
+        }
+
+        .dataCellPositioning{
+            width: 120px;
+        }
+
+        .rowStyling{
+            background-color: lightgray;
+        }
+
+        table, th, td{
+            border-collapse: collapse;
+        }
+
+        .commentsTextBox{
+            height: 75px;
+            width: 755px;
+            border: 1px solid lightgray;
+        }
+
+        button{
+            border: 1px solid lightgray;
+            margin-top: 10px;
+            height: 28.6px;
+            width: 63.6px;
+            text-align: center;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+    <p class="FieldHeaders">Name <span class = "mandates">*</span></p>
+    <input type="text" name="FirstName" class="textBoxes" id="">
+    <input type="text" name="LastName" class="textBoxes" id="">
+    <p class = "fieldDescribes">
+        <span class = "FieldTexts">First</span>
+        <span class = "FieldTexts">Last</span>
+    </p>
+    </div>
+    <div>
+        <p class="FieldHeaders">Email <span class = "mandates">*</span></p>
+        <input type="text" name="email" class="textBoxes" id="">
+    </div>
+    <div>
+        <p class="FieldHeaders">Your Experience <span class = "mandates">*</span></p>
+        <div class = "ratings">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        </div>
+        <p class = "fieldDescribes">
+            <span class = "FieldTexts">Overall, how would you rate your experience with us?</span>
+        </p>
+    </div>
+    <div>
+        <p class="FieldHeaders">How satisfied are you with <span class = "mandates">*</span></p>
+        <div>
+            <table>
+                <tr class="">
+                    <td class="HeaderCellPositioning"></td>
+                    <td class = "FieldTexts tableHeaders">Very Unsatisfied</td>
+                    <td class = "FieldTexts tableHeaders">Unsatisfied</td>
+                    <td class = "FieldTexts tableHeaders">Neutral</td>
+                    <td class = "FieldTexts tableHeaders">Satisfied</td>
+                    <td class = "FieldTexts tableHeaders">Very Satisfied</td>
+                </tr>
+                <tr class="rowStyling">
+                    <td class="HeaderCellPositioning">Purchase</td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                </tr>
+                <tr>
+                    <td class="HeaderCellPositioning">Service</td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                </tr>
+                <tr class="rowStyling">
+                    <td class="HeaderCellPositioning">Company Overall</td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <p class="FieldHeaders">How likely are you to <span class = "mandates">*</span></p>
+        <div>
+            <table>
+                <tr class="">
+                    <td class="HeaderCellPositioning"></td>
+                    <td class = "FieldTexts tableHeaders">Very Unlikely</td>
+                    <td class = "FieldTexts tableHeaders">Unlikely</td>
+                    <td class = "FieldTexts tableHeaders">Neutral</td>
+                    <td class = "FieldTexts tableHeaders">Likely</td>
+                    <td class = "FieldTexts tableHeaders">Very Likely</td>
+                </tr>
+                <tr class="rowStyling">
+                    <td class="HeaderCellPositioning">Buy from us again</td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                </tr>
+                <tr>
+                    <td class="HeaderCellPositioning" style="height: 40px;">Recommend our products to others</td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                </tr>
+                <tr class="rowStyling">
+                    <td class="HeaderCellPositioning" style="height: 40px;">Recommend our company to others</td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                    <td class = "dataCellPositioning"><input type="radio" name="" id="radioPositioning"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <p class="FieldHeaders">Additional comments or suggestions </p>
+        <input type="text" name="comments" class="commentsTextBox" id="">
+    </div>
+    <button type="submit">Submit</button>
+</body>
+</html>
